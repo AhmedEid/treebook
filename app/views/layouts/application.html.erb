@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+             <a href="#" class="navbar-brand"> Treebook </a>
+             <p class="navbar-text"> An app better than all others </p>
+             <ul class="nav">
+             	<li><%= link_to "All Statuses", statuses_path %></li>
+    </div>
+  </div>
+</nav>
 
+	<div class="container">
+		<%= yield %>
+	</div>
 </body>
 </html>
